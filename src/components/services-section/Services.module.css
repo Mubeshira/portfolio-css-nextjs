@@ -1,0 +1,46 @@
+.services{
+    width: 100%;
+    background-color: var(--background-gray);
+    text-align: center;
+    padding: 9.625rem 2.5rem 10rem 2.5rem;
+}
+.services h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    
+}
+.services span{
+    color: var(--logo-color);
+}
+.services p{
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+.servicesCardDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    
+}
+
+@media (max-width:768px){
+    .servicesCardDiv{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width:390px){
+    .servicesCardDiv{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .services{
+        padding: 9.625rem 8px 10rem 8px;
+    }
+
+}

@@ -1,0 +1,40 @@
+.portfolio{
+    width:100%;
+    background-color:  var( --background-black);
+
+    text-align: center;
+    padding: 9rem 32px;
+}
+.portfolio h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+.portfolio span{
+    color: var(--logo-color);
+}
+.portfolio p{
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 6rem;
+}
+.myWork{
+    width: 100%;
+    display: grid;
+    gap: 95px;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+    .myWork{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 112px;
+    }
+}
+@media (max-width: 390px) {
+    .myWork{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+}
+
+
